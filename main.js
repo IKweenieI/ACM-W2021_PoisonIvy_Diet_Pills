@@ -6,3 +6,6 @@ for (let i = 1; i <13; i++)
         document.getElementById("input-num-".concat('', i.toString())).classList.toggle("display-none");
     })
 }
+document.getElementById("btnID").addEventListener("click",function(){
+  
+});
