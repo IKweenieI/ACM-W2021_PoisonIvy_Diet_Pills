@@ -147,14 +147,17 @@
         //
         import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
         const db = getDatabase();
-        let foodName=''
+        let foodName='brown rice'
         const objFirebase = ref(db, foodName );
+        console.log("before calling brown rice")
         onValue(objFirebase, (snapshot) =>
         {
+            console.log("called brown rice")
             const data = snapshot.val();
             console.log(data)
             // you can get data.attribute
         });
+        console.log("did it work?")
 
     </script>
 <!-- bootstrap script -->
