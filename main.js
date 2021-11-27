@@ -27,7 +27,6 @@ function getCoordintes()
         var lng = crd.longitude.toString();
         var coordinates = [lat, lng];
         console.log(`Latitude: ${lat}, Longitude: ${lng}`);
-        getCity(coordinates);
         return;
 
     }
