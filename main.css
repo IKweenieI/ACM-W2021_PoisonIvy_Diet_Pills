@@ -123,17 +123,22 @@ table {
 
 }
 
-#btnID {
+.new-buttons-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content:center;
+
+}
+
+.new-buttons-group *{
     background-color: rgb(232, 244, 252);
     font-size: 20px;
     padding: 10px;
     border: 1px rgb(192, 224, 245) solid;
-    margin-left: 50%;
-    margin-right: 50%;
-    border-radius: 40%;
-    margin-top: 30px;
+    color: black;
+    margin: 10px;
 }
 
-#btnID:hover {
-    background-color: rgb(192, 224, 245);
-}
+.new-buttons-group *:hover{  background-color: rgb(192, 224, 245);
+text-decoration: none;
+color: black;}
