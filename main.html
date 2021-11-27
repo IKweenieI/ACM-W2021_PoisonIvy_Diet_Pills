@@ -14,6 +14,43 @@
     <title>Diet Based Vitamin Pill Maker</title>
 </head>
 
+<!-- food names table database -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDhmoQfgIbaRifyRAJ08p3tDCe0ZrUxrUw",
+        authDomain: "diet-based-vitamin-pills-maker.firebaseapp.com",
+        databaseURL: "https://diet-based-vitamin-pills-maker-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "diet-based-vitamin-pills-maker",
+        storageBucket: "diet-based-vitamin-pills-maker.appspot.com",
+        messagingSenderId: "672533208253",
+        appId: "1:672533208253:web:d592a64e2f732776d66bd4",
+        measurementId: "G-TFEMVCYXST"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    // 
+    import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+    const db = getDatabase();
+    let foodName=''
+    const objFirebase = ref(db, foodName );
+    onValue(objFirebase, (snapshot) =>
+    {
+        const data = snapshot.val();
+        // you can get data.attribute
+    }
+
+</script>
+
 <body>
     <h1 id="pretty-header">Diet Based Vitamin Helper</h1>
     <div class="total">
@@ -22,17 +59,17 @@
             <div class="checkbox-divs">
                 <input type="checkbox" id="1" name="1">
                 <label for="1">Ketchup</label>
-                <input type="number" name="intake" id="input-num-1" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-1" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="2" name="2">
                 <label for="2">Olive oil</label>
-                <input type="number" name="intake" id="input-num-2" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-2" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="3" name="3">
                 <label for="3">Mayonnaise</label>
-                <input type="number" name="intake" id="input-num-3" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-3" class="display-none" min="1" max="10">
             </div>
         </div>
         <div class="all-section">
@@ -40,17 +77,17 @@
             <div class="checkbox-divs">
                 <input type="checkbox" id="5" name="5">
                 <label for="5">Wheat bread</label>
-                <input type="number" name="intake" id="input-num-5" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-5" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="6" name="6">
                 <label for="6">White bread</label>
-                <input type="number" name="intake" id="input-num-6" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-6" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="7" name="7">
                 <label for="7">Chocolate cake</label>
-                <input type="number" name="intake" id="input-num-7" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-7" class="display-none" min="1" max="10">
             </div>
         </div>
         <div class="all-section">
@@ -58,17 +95,17 @@
             <div class="checkbox-divs">
                 <input type="checkbox" id="8" name="8">
                 <label for="8">Chicken</label>
-                <input type="number" name="intake" id="input-num-8" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-8" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="9" name="9">
                 <label for="9">Fish</label>
-                <input type="number" name="intake" id="input-num-9" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-9" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="10" name="10">
                 <label for="10">Mutton</label>
-                <input type="number" name="intake" id="input-num-10" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-10" class="display-none" min="1" max="10">
             </div>
         </div>
         <div class="all-section">
@@ -76,17 +113,17 @@
             <div class="checkbox-divs">
                 <input type="checkbox" id="11" name="11">
                 <label for="11">White rice</label>
-                <input type="number" name="intake" id="input-num-11" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-11" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="12" name="12">
                 <label for="12">Brown rice</label>
-                <input type="number" name="intake" id="input-num-12" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-12" class="display-none" min="1" max="10">
             </div>
             <div class="checkbox-divs">
                 <input type="checkbox" id="4" name="4">
                 <label for="4">Pasta</label>
-                <input type="number" name="intake" id="input-num-4" class="display-none" min="1" max="10" >
+                <input type="number" name="intake" id="input-num-4" class="display-none" min="1" max="10">
             </div>
         </div>
     </div>
