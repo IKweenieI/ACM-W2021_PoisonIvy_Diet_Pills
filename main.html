@@ -35,16 +35,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
-               
+
             </ul>
         </div>
 
-   
+
     </nav>
     <h1 id="pretty-header">Diet Based Vitamin Helper</h1>
     <iframe id="the-map"
         src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC2RGWhR6Zimk17SSdcczscdFylC4olYGY&q=medical+stores"
-         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="total">
         <div class="all-section">
             <h3>Oils Sauces Salad Dressings and Condiments</h3>
@@ -147,30 +147,31 @@
         //
         import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
         const db = getDatabase();
-        let foodName='brown rice'
-        const objFirebase = ref(db, foodName );
-        console.log("before calling brown rice")
+        // you can change this sakshi
+        let foodName = ''
+        const objFirebase = ref(db, foodName);
+
         onValue(objFirebase, (snapshot) =>
         {
-            console.log("called brown rice")
+
             const data = snapshot.val();
-            console.log(data)
+            console.log(data.b1)
             // you can get data.attribute
         });
-        console.log("did it work?")
+
 
     </script>
-<!-- bootstrap script -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<!-- my scripts down -->
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- my scripts down -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -178,8 +179,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-            <script src="jquery-3.6.0.min.js"></script>
-        <script src="main.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
