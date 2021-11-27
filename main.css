@@ -84,19 +84,21 @@ table {
     height: 450px;
     margin: 15px;
 }
+
 .total {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .all-section {
 
     display: flex;
-    width: 21%;
+    width: 21% !important;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(232, 244, 252);
-    border-bottom: 2px white solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.473) solid;
 }
 
 .all-section * {
@@ -115,6 +117,23 @@ table {
 }
 
 .checkbox-divs {
-    flex-wrap: nowrap;
+
+
     width: 100%;
+
+}
+
+#btnID {
+    background-color: rgb(232, 244, 252);
+    font-size: 20px;
+    padding: 10px;
+    border: 1px rgb(192, 224, 245) solid;
+    margin-left: 50%;
+    margin-right: 50%;
+    border-radius: 40%;
+    margin-top: 30px;
+}
+
+#btnID:hover {
+    background-color: rgb(192, 224, 245);
 }
