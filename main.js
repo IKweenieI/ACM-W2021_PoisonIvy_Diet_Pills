@@ -1,13 +1,18 @@
-for (let i = 1; i <13; i++)
+for (let i = 1; i < 27; i++)
 {
-    document.getElementById(i.toString()).addEventListener("click", function ()
+    try
     {
-        console.log(document.getElementById(i.toString()))
-        document.getElementById("input-num-".concat('', i.toString())).classList.toggle("display-none");
-    })
+        document.getElementById(i.toString()).addEventListener("click", function ()
+        {
+            console.log(document.getElementById(i.toString()));
+            document.getElementById("input-num-".concat('', i.toString())).classList.toggle("display-none");
+        });
+    }
+    catch (err) { }
 }
-document.getElementById("btnID").addEventListener("click",function(){
-  
+document.getElementById("btnID").addEventListener("click", function ()
+{
+
 });
 
 

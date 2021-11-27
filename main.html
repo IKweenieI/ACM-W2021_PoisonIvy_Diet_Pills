@@ -118,6 +118,81 @@
                 <input type="number" name="intake" id="input-num-4" class="display-none" min="1" max="10">
             </div>
         </div>
+        <div class="all-section">
+            <h3>Cereals and Breakfast Foods.</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="13" name="13">
+                <label for="13">Oats</label>
+                <input type="number" name="intake" id="input-num-13" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="14" name="14">
+                <label for="14">Chickpeas</label>
+                <input type="number" name="intake" id="input-num-14" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="15" name="15">
+                <label for="15">Green beans</label>
+                <input type="number" name="intake" id="input-num-15" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="16" name="16">
+                <label for="16">Red kidney beans</label>
+                <input type="number" name="intake" id="input-num-16" class="display-none" min="1" max="10">
+            </div>
+        </div>
+        <div class="all-section">
+            <h3>Dairy</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="18" name="18">
+                <label for="18">Milk</label>
+                <input type="number" name="intake" id="input-num-18" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="19" name="1">
+                <label for="19">Curd</label>
+                <input type="number" name="intake" id="input-num-19" class="display-none" min="1" max="10">
+            </div>
+
+        </div>
+        <div class="all-section">
+            <h3>Snacks and Crackers</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="21" name="21">
+                <label for="21">potato chips</label>
+                <input type="number" name="intake" id="input-num-21" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="22" name="22">
+                <label for="22">Banana chips</label>
+                <input type="number" name="intake" id="input-num-22" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="23" name="23">
+                <label for="23">Nachos</label>
+                <input type="number" name="intake" id="input-num-23" class="display-none" min="1" max="10">
+            </div>
+
+        </div>
+        <div class="all-section">
+            <h3>Vegetables</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="24" name="24">
+                <label for="24">tomatoes</label>
+                <input type="number" name="intake" id="input-num-24" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="25" name="25">
+                <label for="25">potatoes</label>
+                <input type="number" name="intake" id="input-num-25" class="display-none" min="1" max="10">
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="26" name="26">
+                <label for="26">onions</label>
+                <input type="number" name="intake" id="input-num-26" class="display-none" min="1" max="10">
+            </div>
+
+        </div>
     </div>
     <button id="btnID">Submit</button>
     <!-- food names table database -->
@@ -147,18 +222,13 @@
         //
         import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
         const db = getDatabase();
-        // you can change this sakshi
         let foodName = ''
         const objFirebase = ref(db, foodName);
-
         onValue(objFirebase, (snapshot) =>
         {
-
             const data = snapshot.val();
-            console.log(data.b1)
             // you can get data.attribute
         });
-
 
     </script>
     <!-- bootstrap script -->
