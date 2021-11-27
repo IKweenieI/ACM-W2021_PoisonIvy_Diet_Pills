@@ -55,20 +55,60 @@ table {
 
 /* reset */
 
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 
 .display-none {
     display: none;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
+#pretty-header {
+
     text-align: center;
-    font-size: 30px;
+    font-size: 90px;
     padding: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
+
+    font-family: 'Comforter Brush', cursive !important;
+
 }
 
-.food-category{
+.total {
     display: flex;
+    justify-content: space-between;
+}
+
+.all-section {
+
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px white solid;
+}
+
+.all-section * {
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+.all-section h3 {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: 1px white underline;
+    font-weight: 900;
+
+}
+
+.checkbox-divs{
+    flex-wrap: nowrap;
+    width: 100%;
 }

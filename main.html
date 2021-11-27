@@ -5,41 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Diet Based Vitamin Pill Maker</title>
 </head>
 
 <body>
-    <h1>Diet Based Vitamin Helper</h1>
-
-
-    <p></p>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-        aria-expanded="false" aria-controls="collapseExample">
-        Category 1
-    </button>
-    </p>
-    <div class="food-category">
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <div>
-                    <input type="checkbox" id="1" name="1">
-                    <label for="1">Label Name</label>
-                    <input type="number" name="intake" id="input-num-1" class="display-none" min="1" max="10" step="2">
-                </div>
-
+    <h1 id="pretty-header">Diet Based Vitamin Helper</h1>
+    <div class="total">
+        <div class="all-section">
+            <h3>Oils Sauces Salad Dressings and Condiments</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="1" name="1">
+                <label for="1">Ketchup</label>
+                <input type="number" name="intake" id="input-num-1" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="2" name="2">
+                <label for="2">Olive oil</label>
+                <input type="number" name="intake" id="input-num-2" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="3" name="3">
+                <label for="3">Mayonnaise</label>
+                <input type="number" name="intake" id="input-num-3" class="display-none" min="1" max="10" >
             </div>
         </div>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <div>
-                    <input type="checkbox" id="2" name="2">
-                    <label for="2">Label Name</label>
-                    <input type="number" name="intake" id="input-num-2" class="display-none" min="1" max="10" step="2">
-                </div>
-        
+        <div class="all-section">
+            <h3>Bakery and Bread</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="5" name="5">
+                <label for="5">Wheat bread</label>
+                <input type="number" name="intake" id="input-num-5" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="6" name="6">
+                <label for="6">White bread</label>
+                <input type="number" name="intake" id="input-num-6" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="7" name="7">
+                <label for="7">Chocolate cake</label>
+                <input type="number" name="intake" id="input-num-7" class="display-none" min="1" max="10" >
+            </div>
+        </div>
+        <div class="all-section">
+            <h3>Meat and Seafood</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="8" name="8">
+                <label for="8">Chicken</label>
+                <input type="number" name="intake" id="input-num-8" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="9" name="9">
+                <label for="9">Fish</label>
+                <input type="number" name="intake" id="input-num-9" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="10" name="10">
+                <label for="10">Mutton</label>
+                <input type="number" name="intake" id="input-num-10" class="display-none" min="1" max="10" >
+            </div>
+        </div>
+        <div class="all-section">
+            <h3>Pasta and Rice</h3>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="11" name="11">
+                <label for="11">White rice</label>
+                <input type="number" name="intake" id="input-num-11" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="12" name="12">
+                <label for="12">Brown rice</label>
+                <input type="number" name="intake" id="input-num-12" class="display-none" min="1" max="10" >
+            </div>
+            <div class="checkbox-divs">
+                <input type="checkbox" id="4" name="4">
+                <label for="4">Pasta</label>
+                <input type="number" name="intake" id="input-num-4" class="display-none" min="1" max="10" >
             </div>
         </div>
     </div>
