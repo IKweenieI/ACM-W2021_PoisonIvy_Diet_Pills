@@ -86,7 +86,7 @@ table {
 .all-section {
 
     display: flex;
-    width: 20%;
+    width: 21%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(245, 245, 245);
