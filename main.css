@@ -161,9 +161,9 @@ table {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
+    
 }
 
 .display-vitamins *, .display-pills * {
-    width: 30%;
+    width: 30%;padding: 10px;
 }
