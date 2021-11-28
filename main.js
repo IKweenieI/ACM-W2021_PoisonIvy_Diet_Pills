@@ -19,6 +19,7 @@ document.getElementById("btnID").addEventListener("click", function ()
       willBeToggled[i].classList.toggle("display-none")
     }
 
+
 });
 
 

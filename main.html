@@ -194,6 +194,36 @@
 
         </div>
     </div>
+    <script>
+        // arr[0] += parseInt(data.a);
+            // arr[1] += parseInt(data.b1);
+            // arr[2] += parseInt(data.b12);
+            // arr[3] += parseInt(data.b2);
+            // arr[4] += parseInt(data.b3);
+            // arr[5] += parseInt(data.b5);
+            // arr[6] += parseInt(data.b6);
+            // arr[7] += parseInt(data.b7);
+            // arr[8] += parseInt(data.b9);
+            // arr[9] += parseInt(data.c);
+            // arr[10] += parseInt(data.d);
+            // arr[11] += parseInt(data.e);
+            // arr[12] += parseInt(data.k);
+
+
+            // <span class="toggle-on-submit display-none" id="Vitamin-A">Vitamin A: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-C">Vitamin C: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-D">Vitamin D: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B1">Vitamin B1: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B2">Vitamin B2: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B3">Vitamin B3: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B6">Vitamin B6: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B12">Vitamin B12: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B5">Vitamin B5: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B9">Vitamin B9(Folate): </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-E">Vitamin E: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-K">Vitamin K: </span>
+            
+    </script>
     <div class="new-buttons-group">
         <button id="btnID">Submit</button>
         <a href="feedback.html">Give us a feedback</a>
@@ -296,40 +326,49 @@
 
         }
 
+
+        document.getElementById("btnID").addEventListener("click", function ()
+            {
+               
+            // arr[0] += parseInt(data.a);
+            // arr[1] += parseInt(data.b1);
+            // arr[2] += parseInt(data.b12);
+            // arr[3] += parseInt(data.b2);
+            // arr[4] += parseInt(data.b3);
+            // arr[5] += parseInt(data.b5);
+            // arr[6] += parseInt(data.b6);
+            // arr[7] += parseInt(data.b7);
+            // arr[8] += parseInt(data.b9);
+            // arr[9] += parseInt(data.c);
+            // arr[10] += parseInt(data.d);
+            // arr[11] += parseInt(data.e);
+            // arr[12] += parseInt(data.k);
+
+
+            // <span class="toggle-on-submit display-none" id="Vitamin-A">Vitamin A: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-C">Vitamin C: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-D">Vitamin D: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B1">Vitamin B1: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B2">Vitamin B2: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B3">Vitamin B3: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B6">Vitamin B6: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B12">Vitamin B12: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B5">Vitamin B5: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-B9">Vitamin B9(Folate): </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-E">Vitamin E: </span>
+            //     <span class="toggle-on-submit display-none" id="Vitamin-K">Vitamin K: </span>
+            let s1="Vitamin C: ".concat(arr[9].toString)
+            document.getElementById("Vitamin-C").textContent= s1
+
+
+
+            });
     </script>
 
 
-    <!-- pills database -->
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyAlwYZA_t4RrPSi6lL8lu1oJXstiDYTAME",
-            authDomain: "pill-name.firebaseapp.com",
-            databaseURL: "https://pill-name-default-rtdb.firebaseio.com",
-            projectId: "pill-name",
-            storageBucket: "pill-name.appspot.com",
-            messagingSenderId: "435362705898",
-            appId: "1:435362705898:web:12f0774a0f05bc2e8ec293",
-            measurementId: "G-KK4SQPN078"
-        };
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        //
-        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
-        const db = getDatabase();
-        // you can change this sakshi
-
-    </script>
 
     <!-- bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
