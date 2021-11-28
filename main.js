@@ -48,12 +48,6 @@ function getCoordintes()
 
 getCoordintes();
 
-//  geeks for geeks over
-
-// In this example, we center the map, and add a marker, using a LatLng object
-// literal instead of a google.maps.LatLng object. LatLng object literals are
-// a convenient way to add a LatLng coordinate and, in most cases, can be used
-// in place of a google.maps.LatLng object.
 let map;
 
 function initMap()
@@ -63,7 +57,7 @@ function initMap()
         center: { lat: lat, lng: lng },
     };
 
-    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    map = new google.maps.Map(document.getElementById("the-map"), mapOptions);
 
     const marker = new google.maps.Marker({
         // The below line is equivalent to writing:
