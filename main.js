@@ -12,6 +12,12 @@ for (let i = 1; i < 27; i++)
 }
 document.getElementById("btnID").addEventListener("click", function ()
 {
+    let willBeToggled = document.querySelectorAll(".toggle-on-submit")
+    
+    for (let i = 0; i < willBeToggled.length; i++)
+    {
+      willBeToggled[i].classList.toggle("display-none")
+    }
 
 });
 
@@ -79,3 +85,4 @@ function initMap()
         infowindow.open(map, marker);
     });
 }
+

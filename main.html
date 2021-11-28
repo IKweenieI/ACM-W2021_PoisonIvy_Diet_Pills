@@ -196,43 +196,44 @@
     </div>
     <div class="new-buttons-group">
         <button id="btnID">Submit</button>
-       <a href="feedback.html">Give us a feedback</a>
+        <a href="feedback.html">Give us a feedback</a>
     </div>
-    <p class="header-dispay-table">
-        <span >You have the following deficiencies</span>
-        <div class="display-vitamins">
-            <span id="Vitamin-A">Vitamin A: </span>
-            <span id="Vitamin-C">Vitamin C: </span>
-            <span id="Vitamin-D">Vitamin D: </span>
-            <span id="Vitamin-B1">Vitamin B1: </span>
-            <span id="Vitamin-B2">Vitamin B2: </span>
-            <span id="Vitamin-B3">Vitamin B3: </span>
-            <span id="Vitamin-B6">Vitamin B6: </span>
-            <span id="Vitamin-B12">Vitamin B12: </span>
-            <span id="Vitamin-B5">Vitamin B5: </span>
-            <span id="Vitamin-B9">Vitamin B9(Folate): </span>
-            <span id="Vitamin-E">Vitamin E: </span>
-            <span id="Vitamin-K">Vitamin K: </span>
-        </div>
+    <p class="header-dispay-table ">
+        <span class="toggle-on-submit display-none">You have the following deficiencies</span>
+    <div class="display-vitamins ">
+        <span class="toggle-on-submit display-none" id="Vitamin-A">Vitamin A: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-C">Vitamin C: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-D">Vitamin D: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B1">Vitamin B1: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B2">Vitamin B2: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B3">Vitamin B3: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B6">Vitamin B6: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B12">Vitamin B12: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B5">Vitamin B5: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-B9">Vitamin B9(Folate): </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-E">Vitamin E: </span>
+        <span class="toggle-on-submit display-none" id="Vitamin-K">Vitamin K: </span>
+    </div>
     
-        <!--  make for all vits -->
+    
     </p>
-    <p class="header-dispay-table">
-        <span >Considering your deficiencies we suggest you following pills</span>
-        <div class="display-pills">
-            <span id="Pill-A">Bronson Vitamin A Retinyl Palmitate - 10,000 IU(3mg)</span>
-            <span id="Pill-C">Care/of Vitamin C (250)</span>
-            <span id="Pill-D">BrainMD’s Vitamin D3 (1.5mg) </span>
-            <span id="Pill-B1">NOW Foods Vitamin B1 (100mg)</span>
-            <span id="Pill-B2">Nature's Bounty Vitamin B2 as Riboflavin Supplement(100mg)</span>
-            <span id="Pill-B3">ENDUR-ACIN Niacin - Vitamin B3 (500mg)</span>
-            <span id="Pill-B6"> </span>
-            <span id="Pill-B12">Methylcobalamin 1000 mcg (1mg)</span>
-            <span id="Pill-B5">Jarrow Formulas Pantothenic Acid B5 500 mg</span>
-            <span id="Pill-B9">Nature's Bounty Folic Acid 800 mcg Tablets(8)</span>
-            <span id="Pill-E">GenOne E-gen(400mg)</span>
-            <span id="Pill-K">Garden of Life Vegan Vitamin K Supplement (0.12mg)</span>
-        </div>
+    <p class="header-dispay-table ">
+        <span class="toggle-on-submit display-none">Considering your deficiencies we suggest you following pills</span>
+    <div class="display-pills">
+        <span class="toggle-on-submit display-none" id="Pill-A">Bronson Vitamin A Retinyl Palmitate - 10,000 IU(3mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-C">Care/of Vitamin C (250)</span>
+        <span class="toggle-on-submit display-none" id="Pill-D">BrainMD’s Vitamin D3 (1.5mg) </span>
+        <span class="toggle-on-submit display-none" id="Pill-B1">NOW Foods Vitamin B1 (100mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-B2">Nature's Bounty Vitamin B2 as Riboflavin Supplement(100mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-B3">ENDUR-ACIN Niacin - Vitamin B3 (500mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-B6"> </span>
+        <span class="toggle-on-submit display-none" id="Pill-B12">Methylcobalamin 1000 mcg (1mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-B5">Jarrow Formulas Pantothenic Acid B5 500 mg</span>
+        <span class="toggle-on-submit display-none" id="Pill-B9">Nature's Bounty Folic Acid 800 mcg Tablets(8)</span>
+        <span class="toggle-on-submit display-none" id="Pill-E">GenOne E-gen(400mg)</span>
+        <span class="toggle-on-submit display-none" id="Pill-K">Garden of Life Vegan Vitamin K Supplement (0.12mg)</span>
+    </div>
+    </p>
     <!-- food names table database -->
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -300,40 +301,40 @@
         import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
         const db = getDatabase();
         // you can change this sakshi
-                 var arr=[0,0,0,0,0,0,0,0,0,0,0,0,0];
-        for(let i = 1;i<13;i++)
+        var arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        for (let i = 1; i < 13; i++)
         {
-          document.getElementById(i.toString()).addEventListener("click", function ()
-          {
-          var t=document.getElementById(i.toString());
-          let foodName = i;
-        const objFirebase = ref(db, foodName.toString());
+            document.getElementById(i.toString()).addEventListener("click", function ()
+            {
+                var t = document.getElementById(i.toString());
+                let foodName = i;
+                const objFirebase = ref(db, foodName.toString());
 
-        onValue(objFirebase, (snapshot) =>
-        {
+                onValue(objFirebase, (snapshot) =>
+                {
 
-            const data = snapshot.val();
-            console.log(data.b1)
-            arr[0]+=parseInt(data.a);
-            arr[1]+=parseInt(data.b1);
-            arr[2]+=parseInt(data.b12);
-            arr[3]+=parseInt(data.b2);
-            arr[4]+=parseInt(data.b3);
-            arr[5]+=parseInt(data.b5);
-            arr[6]+=parseInt(data.b6);
-            arr[7]+=parseInt(data.b7);
-            arr[8]+=parseInt(data.b9);
-            arr[9]+=parseInt(data.c);
-            arr[10]+=parseInt(data.d);
-            arr[11]+=parseInt(data.e);
-            arr[12]+=parseInt(data.k);
-            console.log(arr);
-            // you can get data.attribute
-        });
+                    const data = snapshot.val();
+                    console.log(data.b1)
+                    arr[0] += parseInt(data.a);
+                    arr[1] += parseInt(data.b1);
+                    arr[2] += parseInt(data.b12);
+                    arr[3] += parseInt(data.b2);
+                    arr[4] += parseInt(data.b3);
+                    arr[5] += parseInt(data.b5);
+                    arr[6] += parseInt(data.b6);
+                    arr[7] += parseInt(data.b7);
+                    arr[8] += parseInt(data.b9);
+                    arr[9] += parseInt(data.c);
+                    arr[10] += parseInt(data.d);
+                    arr[11] += parseInt(data.e);
+                    arr[12] += parseInt(data.k);
+                    console.log(arr);
+                    // you can get data.attribute
+                });
 
-});
+            });
 
-}
+        }
     </script>
 
     <!-- bootstrap script -->
